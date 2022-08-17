@@ -2,10 +2,12 @@ import { useEffect } from "react";
 
 export const Message = () => {
   useEffect(() => {
-    console.log("mmesage mounted");
-    return () => {
-      console.log("mmesage unmounted");
-    };
+    window.addEventListener("mousemove", (event) => {
+      console.log(event, 'asd');
+      
+    });
+
+
   }, []);
 
   return (
