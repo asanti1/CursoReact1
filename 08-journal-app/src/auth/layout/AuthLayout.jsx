@@ -1,5 +1,4 @@
-import { Grid, Typography, TextField, Button, Link } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
+import { Grid, Typography } from "@mui/material";
 
 export const AuthLayout = ({ children, title = "" }) => {
   return (
@@ -16,7 +15,7 @@ export const AuthLayout = ({ children, title = "" }) => {
         className="box-shadow"
         xs={3}
         sx={{
-          width: { md: 450 },
+          width: { sm: 450 },
           backgroundColor: "white",
           padding: 3,
           borderRadius: 2,
